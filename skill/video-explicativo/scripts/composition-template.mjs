@@ -1,6 +1,6 @@
 // ============================================================================
 // TEMPLATE DE COMPOSIÇÃO (HyperFrames) — adapte para cada novo vídeo.
-// Exemplo: vídeo "Skills no Claude Code" (9 cenas; a 9ª é a CTA INEMA.CLUB).
+// Exemplo: vídeo "Skills no Claude Code" (9 cenas; a 9ª é a CTA ARCKHÉ AI).
 //
 // COMO ADAPTAR a um novo assunto:
 //   1. AUDIO[]    -> durações REAIS (ffprobe) dos WAVs, na ordem das cenas
@@ -9,7 +9,7 @@
 //   3. sceneN()   -> HTML de cada cena (reaproveite as classes CSS já definidas).
 //   4. anim(i,t)  -> tweens GSAP por cena (case N).
 //   5. BODIES     -> liste as funções sceneN na ordem.
-//   6. scene9()/case 9 = CTA INEMA.CLUB -> NÃO remover (assinatura padrão).
+//   6. scene9()/case 9 = CTA ARCKHÉ AI -> NÃO remover (assinatura padrão).
 // CSS dark premium, camada de fundo, captions, barra de progresso, overrides
 // 9:16 (body.v) e a CTA já estão prontos. Em geral só se mexe nas cenas + AUDIO[].
 //
@@ -53,7 +53,7 @@ const CAPTIONS = [
   "Avançado: scripts, referências e templates",
   "Este vídeo foi feito pela Skill HyperFrames",
   "Comece com um SKILL.md. Agora é com você.",
-  "Mais conteúdo em inema.club",
+  "Mais conteúdo em ARCKHÉ AI",
 ];
 
 // ---------- CONTEÚDO HTML POR CENA ----------
@@ -177,9 +177,9 @@ function scene8() {
 function scene9() {
   return `
     <div class="cta-eyebrow" id="s9-eye">CONTINUA EM</div>
-    <div class="cta-brand" id="s9-brand"><span class="b1">INEMA</span><span class="bdotsep">.</span><span class="b2">CLUB</span></div>
+    <div class="cta-brand" id="s9-brand"><span class="b1">ARCKHÉ</span><span class="bdotsep">.</span><span class="b2">CLUB</span></div>
     <div class="rule center" id="s9-rule"></div>
-    <div class="cta-url mono" id="s9-url"><span class="cta-globe">🌐</span>inema.club</div>
+    <div class="cta-url mono" id="s9-url"><span class="cta-globe">🌐</span>ARCKHÉ AI</div>
     <div class="reg tl" id="s9-r1"></div><div class="reg br" id="s9-r2"></div>`;
 }
 
@@ -443,7 +443,7 @@ const html = `<!doctype html>
       .closer{text-align:center;font-family:Sora;font-weight:800;font-size:128px;line-height:1.02;letter-spacing:-.02em}
       .sig{text-align:center;font-size:30px;color:var(--accent);letter-spacing:.3em;text-transform:uppercase;margin-top:20px}
 
-      /* cena 9 CTA (INEMA.CLUB) */
+      /* cena 9 CTA (ARCKHÉ AI) */
       .cta-eyebrow{text-align:center;font-family:"JetBrains Mono",monospace;font-size:26px;letter-spacing:.36em;
         color:var(--muted);text-transform:uppercase;margin-bottom:30px}
       .cta-brand{text-align:center;font-family:Sora;font-weight:800;font-size:150px;line-height:.95;letter-spacing:-.02em}

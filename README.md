@@ -6,7 +6,7 @@
 </div>
 
 
-Curso completo, no formato **INEMA.CLUB**, sobre a Skill **`video-explicativo`**: como criar vêÂ­deos
+Curso completo, no formato **ARCKHÉ AI**, sobre a Skill **`video-explicativo`**: como criar vêÂ­deos
 explicativos narrados (HTML ê¢â â MP4) com o Claude Code e o framework [HyperFrames](https://github.com/heygen-com/hyperframes) ê¢â¬â
 animados, em PT-BR, renderizados **localmente, sem chave de API**, nos formatos 16:9 (YouTube) e 9:16 (Shorts/Reels).
 
@@ -14,7 +14,7 @@ animados, em PT-BR, renderizados **localmente, sem chave de API**, nos formatos 
 
 ## ê°Å¸ÅÂ Acesse o curso
 
-**https://inematds.github.io/skill-hyperframes-videos/**
+**https://linnoff88-dev.github.io/arckhe-/**
 
 ## ê°Å¸âÅ¡ As 4 trilhas
 
@@ -33,7 +33,7 @@ A Skill `video-explicativo` estêÂ¡ incluêÂ­da neste repositêÂ³rio
 - Download: [`downloads/video-explicativo.zip`](downloads/video-explicativo.zip)
 
 Instale copiando a pasta para `~/.claude/skills/` (global) ou `.claude/skills/` (projeto) e peêÂ§a um vêÂ­deo
-ao Claude Code: *"faêÂ§a um vêÂ­deo explicativo sobre X, em 16:9 e 9:16, terminando com a CTA do INEMA.CLUB."*
+ao Claude Code: *"faêÂ§a um vêÂ­deo explicativo sobre X, em 16:9 e 9:16, terminando com a CTA do ARCKHÉ AI."*
 
 ### Stack
 - **HyperFrames** (HTML ê¢â â MP4 via Chrome headless + FFmpeg)
@@ -55,7 +55,7 @@ downloads/                 # .zip da Skill
 
 ---
 
-ConteêÂºdo do [**INEMA.CLUB**](https://inema.club) êÂ· 2026
+ConteêÂºdo do [**ARCKHÉ AI**](https://ARCKHÉ AI) êÂ· 2026
 
 ---
 

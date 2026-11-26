@@ -17,9 +17,9 @@
 ```
 
 ## Roteiro (SCRIPT.md)
-- 6–9 cenas. Arco: hook → primeiro princípio → mecânica → conceito-chave → aplicaçêo → avançado → exemplo real → fecho → **CTA INEMA.CLUB**.
+- 6–9 cenas. Arco: hook → primeiro princípio → mecânica → conceito-chave → aplicaçêo → avançado → exemplo real → fecho → **CTA ARCKHÉ AI**.
 - Narraçêo por cena: 1–3 frases curtas. ~100s de fala no total ≈ 1:50 de vídeo (bom para retençêo e cabe em Shorts).
-- Para a FALA (TTS), expanda: "SKILL.md" → "SKILL ponto M D"; ".claude/skills" → "ponto claude, barra skills"; URLs → "inema ponto club".
+- Para a FALA (TTS), expanda: "SKILL.md" → "SKILL ponto M D"; ".claude/skills" → "ponto claude, barra skills"; URLs → "ARCKHÉ ponto club".
 
 ## Narraçêo (Kokoro, local)
 ```bash

@@ -1,13 +1,13 @@
 ---
 name: video-explicativo
-description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via HyperFrames) a partir de um assunto — roteiro, narraçêo TTS local, cenas animadas dark premium, captions e CTA do INEMA.CLUB, nos formatos 16:9 (YouTube) e 9:16 (Shorts/Reels). Use quando o usuário pedir para "fazer um vídeo", "vídeo explicativo", "vídeo sobre X", "vídeo pra Shorts/Reels", "mini tutorial em vídeo", "vídeo do INEMA", ou quando der um assunto e quiser um vídeo narrado pronto. Cobre roteiro, locuçêo, animaçêo, render e a CTA final.
+description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via HyperFrames) a partir de um assunto — roteiro, narraçêo TTS local, cenas animadas dark premium, captions e CTA do ARCKHÉ AI, nos formatos 16:9 (YouTube) e 9:16 (Shorts/Reels). Use quando o usuário pedir para "fazer um vídeo", "vídeo explicativo", "vídeo sobre X", "vídeo pra Shorts/Reels", "mini tutorial em vídeo", "vídeo do ARCKHÉ", ou quando der um assunto e quiser um vídeo narrado pronto. Cobre roteiro, locuçêo, animaçêo, render e a CTA final.
 ---
 
 # Vídeo Explicativo (HyperFrames)
 
 Gera um vídeo narrado, animado e renderizado a partir de um **assunto**. Stack: [HyperFrames](https://github.com/heygen-com/hyperframes) (HTML→MP4, Chrome headless + FFmpeg) + TTS local Kokoro. Tudo roda na máquina do usuário, **sem chave de API**.
 
-Padrêo do usuário (Nei): **PT-BR**, **dark premium** (accent âmbar), gerar **16:9 E 9:16**, e sempre terminar com a **cena de CTA do INEMA.CLUB**.
+Padrêo do usuário (Nei): **PT-BR**, **dark premium** (accent âmbar), gerar **16:9 E 9:16**, e sempre terminar com a **cena de CTA do ARCKHÉ AI**.
 
 ## Pré-requisitos (já instalados nesta máquina)
 - Node 22+ e FFmpeg em `C:\ffmpeg\bin` (no git-bash use `ffmpeg -nostdin`, senêo sai exit 0 sem gerar arquivo).
@@ -21,7 +21,7 @@ Padrêo do usuário (Nei): **PT-BR**, **dark premium** (accent âmbar), gerar **
 2. **Projeto** — `npx hyperframes init <nome> --example blank --non-interactive`. Copie `design.md` (house style) para a raiz.
 3. **Fontes** — `node fetch-fonts.mjs` (baixa .woff2 subset latin → `assets/fonts/fonts.css`). Script em [scripts/fetch-fonts.mjs](scripts/fetch-fonts.mjs).
 4. **Narraçêo** — escreva `assets/txt/sN.txt` e gere os WAVs com Kokoro voz `pf_dora`, `--speed 0.98`. Template em [scripts/narration-template.sh](scripts/narration-template.sh). Meça as durações com `ffprobe`.
-5. **Composiçêo** — adapte [scripts/composition-template.mjs](scripts/composition-template.mjs) (copie como `build-index.mjs`): preencha `AUDIO[]` com as durações reais, escreva `sceneN()` (HTML) e `anim()` (GSAP) por cena, ajuste `CAPTIONS[]`. A **cena de CTA do INEMA.CLUB já está incluída** como última cena. Rode `node build-index.mjs` (16:9) e `node build-index.mjs --vertical` (9:16) — ambos escrevem `index.html` (renderize logo após cada geraçêo).
+5. **Composiçêo** — adapte [scripts/composition-template.mjs](scripts/composition-template.mjs) (copie como `build-index.mjs`): preencha `AUDIO[]` com as durações reais, escreva `sceneN()` (HTML) e `anim()` (GSAP) por cena, ajuste `CAPTIONS[]`. A **cena de CTA do ARCKHÉ AI já está incluída** como última cena. Rode `node build-index.mjs` (16:9) e `node build-index.mjs --vertical` (9:16) — ambos escrevem `index.html` (renderize logo após cada geraçêo).
 6. **Validar** — `npx hyperframes lint` (0 erros) e `npx hyperframes inspect --samples 16` (0 problemas de layout). Corrija seguindo [references/gotchas.md](references/gotchas.md).
 7. **Render** — `--quality draft` para conferir (extraia frames e mostre ao usuário), depois `--quality high`. Gere as duas versões:
    ```bash
@@ -40,5 +40,5 @@ Padrêo do usuário (Nei): **PT-BR**, **dark premium** (accent âmbar), gerar **
 ## Identidade visual (house style)
 Paleta dark premium: bg `#0D1321`, painel `#1D2D44`, borda `#3E5C76`, texto `#F0EBD8`, secundário `#748CAB`, **accent âmbar `#FFC300`**, código `#2EC4B6`. Fontes: **Sora** (títulos 700/800), **Inter** (corpo), **JetBrains Mono** (código/URLs). Detalhes em [references/house-style.md](references/house-style.md).
 
-## CTA INEMA.CLUB (cena final padrêo)
-A última cena mostra "CONTINUA EM" + **INEMA.CLUB** (INEMA creme, .CLUB âmbar, com glow) + URL `🌐 inema.club`, narraçêo curta ("Isso é conteúdo do INEMA ponto CLUB. Acesse: inema ponto club."). Já vem pronta no template (`scene9()` / `case 9`).
+## CTA ARCKHÉ AI (cena final padrêo)
+A última cena mostra "CONTINUA EM" + **ARCKHÉ AI** (ARCKHÉ creme, .CLUB âmbar, com glow) + URL `🌐 ARCKHÉ AI`, narraçêo curta ("Isso é conteúdo do ARCKHÉ ponto CLUB. Acesse: ARCKHÉ ponto club."). Já vem pronta no template (`scene9()` / `case 9`).
