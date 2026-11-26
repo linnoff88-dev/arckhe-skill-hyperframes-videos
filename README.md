@@ -1,4 +1,4 @@
-﻿# ðŸŽ¬ HyperFrames â€” VÃ­deos explicativos com Claude Code
+ï»¿# ê°Å¸Å½Â¬ HyperFrames ê¢â¬â VêÂ­deos explicativos com Claude Code
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -6,56 +6,56 @@
 </div>
 
 
-Curso completo, no formato **INEMA.CLUB**, sobre a Skill **`video-explicativo`**: como criar vÃ­deos
-explicativos narrados (HTML â†’ MP4) com o Claude Code e o framework [HyperFrames](https://github.com/heygen-com/hyperframes) â€”
+Curso completo, no formato **INEMA.CLUB**, sobre a Skill **`video-explicativo`**: como criar vêÂ­deos
+explicativos narrados (HTML ê¢â â MP4) com o Claude Code e o framework [HyperFrames](https://github.com/heygen-com/hyperframes) ê¢â¬â
 animados, em PT-BR, renderizados **localmente, sem chave de API**, nos formatos 16:9 (YouTube) e 9:16 (Shorts/Reels).
 
-> Este curso nasceu de um vÃ­deo que foi, ele mesmo, **feito por uma Skill**.
+> Este curso nasceu de um vêÂ­deo que foi, ele mesmo, **feito por uma Skill**.
 
-## ðŸŒ Acesse o curso
+## ê°Å¸ÅÂ Acesse o curso
 
 **https://inematds.github.io/skill-hyperframes-videos/**
 
-## ðŸ“š As 4 trilhas
+## ê°Å¸âÅ¡ As 4 trilhas
 
 | Trilha | Tema | O que cobre |
 |--------|------|-------------|
-| ðŸ§© **T1 â€” Skills no Claude Code** | Fundamentos | O que Ã© uma Skill, o `SKILL.md`, `name` + `description`, divulgaÃ§Ã£o progressiva, onde vivem |
-| ðŸŽ¬ **T2 â€” Pipeline: HTML â†’ MP4** | PrÃ¡tico | Setup, roteiro, narraÃ§Ã£o TTS (Kokoro), composiÃ§Ã£o em GSAP, lint/inspect, render 16:9 e 9:16 |
-| ðŸ”§ **T3 â€” Por dentro do skill** | AvanÃ§ado | Estrutura do skill, house style dark premium, o gerador `build-index.mjs`, gotchas de produÃ§Ã£o |
-| ðŸ’¡ **T4 â€” AplicaÃ§Ãµes & Prompts** | PrÃ¡tico | YouTube, Shorts, onboarding, aulas, lanÃ§amentos + biblioteca de prompts prontos |
+| ê°Å¸Â§Â© **T1 ê¢â¬â Skills no Claude Code** | Fundamentos | O que êÂ© uma Skill, o `SKILL.md`, `name` + `description`, divulgaêÂ§êÂ£o progressiva, onde vivem |
+| ê°Å¸Å½Â¬ **T2 ê¢â¬â Pipeline: HTML ê¢â â MP4** | PrêÂ¡tico | Setup, roteiro, narraêÂ§êÂ£o TTS (Kokoro), composiêÂ§êÂ£o em GSAP, lint/inspect, render 16:9 e 9:16 |
+| ê°Å¸âÂ§ **T3 ê¢â¬â Por dentro do skill** | AvanêÂ§ado | Estrutura do skill, house style dark premium, o gerador `build-index.mjs`, gotchas de produêÂ§êÂ£o |
+| ê°Å¸âÂ¡ **T4 ê¢â¬â AplicaêÂ§êÂµes & Prompts** | PrêÂ¡tico | YouTube, Shorts, onboarding, aulas, lanêÂ§amentos + biblioteca de prompts prontos |
 
-## ðŸ“¦ A Skill
+## ê°Å¸âÂ¦ A Skill
 
-A Skill `video-explicativo` estÃ¡ incluÃ­da neste repositÃ³rio:
+A Skill `video-explicativo` estêÂ¡ incluêÂ­da neste repositêÂ³rio:
 
-- Pasta navegÃ¡vel: [`skill/video-explicativo/`](skill/video-explicativo/)
+- Pasta navegêÂ¡vel: [`skill/video-explicativo/`](skill/video-explicativo/)
 - Download: [`downloads/video-explicativo.zip`](downloads/video-explicativo.zip)
 
-Instale copiando a pasta para `~/.claude/skills/` (global) ou `.claude/skills/` (projeto) e peÃ§a um vÃ­deo
-ao Claude Code: *"faÃ§a um vÃ­deo explicativo sobre X, em 16:9 e 9:16, terminando com a CTA do INEMA.CLUB."*
+Instale copiando a pasta para `~/.claude/skills/` (global) ou `.claude/skills/` (projeto) e peêÂ§a um vêÂ­deo
+ao Claude Code: *"faêÂ§a um vêÂ­deo explicativo sobre X, em 16:9 e 9:16, terminando com a CTA do INEMA.CLUB."*
 
 ### Stack
-- **HyperFrames** (HTML â†’ MP4 via Chrome headless + FFmpeg)
+- **HyperFrames** (HTML ê¢â â MP4 via Chrome headless + FFmpeg)
 - **Kokoro** (TTS local PT-BR, voz `pf_dora`, sem chave de API)
-- **GSAP** (animaÃ§Ã£o das cenas)
+- **GSAP** (animaêÂ§êÂ£o das cenas)
 
-## ðŸ—‚ï¸ Estrutura do repositÃ³rio
+## ê°Å¸ââê¯Â¸Â Estrutura do repositêÂ³rio
 
 ```
 index.html                 # Landing
 curso/
-  index.html               # Ãndice das trilhas
+  index.html               # êÂndice das trilhas
   trilha1..4/
-    index.html             # Ãndice da trilha (mapa + mÃ³dulos)
-    modulo-X-Y.html        # PÃ¡ginas de mÃ³dulo (16 no total)
-skill/video-explicativo/   # A Skill, navegÃ¡vel
+    index.html             # êÂndice da trilha (mapa + mêÂ³dulos)
+    modulo-X-Y.html        # PêÂ¡ginas de mêÂ³dulo (16 no total)
+skill/video-explicativo/   # A Skill, navegêÂ¡vel
 downloads/                 # .zip da Skill
 ```
 
 ---
 
-ConteÃºdo do [**INEMA.CLUB**](https://inema.club) Â· 2026
+ConteêÂºdo do [**INEMA.CLUB**](https://inema.club) êÂ· 2026
 
 ---
 
